@@ -1,0 +1,109 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Page Sections */
+.page {
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Home Section */
+#home h1 {
+    font-size: 50px;
+    color: yellow;
+}
+
+#home p {
+    font-size: 20px;
+    color: lightgray;
+}
+
+.cta-button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Portfolio Section */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #222;
+    padding: 20px;
+    color: lightgray;
+}
+
+/* Contact Form */
+#contact form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#contact form input, #contact form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #333;
+    border: none;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: blue;
+    padding: 20px;
+    color: yellow;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
