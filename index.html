@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Minds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('portfolio')">Portfolio</a></li>
+                <li><a href="#" onclick="showPage('services')">Our Services</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+                <li><a href="#" onclick="showPage('signin')">Sign In/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="page active">
+        <h1>Welcome to Creative Minds</h1>
+        <p>Your journey to unleash creativity starts here. Explore our services, portfolio, and more!</p>
+        <a href="#" class="cta-button" onclick="showPage('services')">Explore Services</a>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="page">
+        <h1>Our Portfolio</h1>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">Project 1</div>
+            <div class="portfolio-item">Project 2</div>
+            <div class="portfolio-item">Project 3</div>
+            <div class="portfolio-item">Project 4</div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services" class="page">
+        <h1>Our Services</h1>
+        <ul>
+            <li>Web Design & Development</li>
+            <li>Graphic Design & Branding</li>
+            <li>Creative Consultancy</li>
+            <li>UI/UX Design</li>
+            <li>Marketing and Social Media Solutions</li>
+        </ul>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="page">
+        <h1>Contact Us</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Sign In/Sign Up Section -->
+    <section id="signin" class="page">
+        <div class="auth-container">
+            <h1>Sign In</h1>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">Sign In</button>
+            </form>
+
+            <h2>Don't have an account? Sign Up</h2>
+            <form>
+                <label for="newEmail">Email:</label>
+                <input type="email" id="newEmail" required>
+
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Creative Minds. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
